@@ -1,0 +1,2 @@
+ter len 0
+show version

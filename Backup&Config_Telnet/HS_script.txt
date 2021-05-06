@@ -1,0 +1,10 @@
+configure
+language en
+admin user Admin_sxdd
+passwrod CGcsxb@001$
+access telnet
+access ssh
+access https
+exit
+exit
+

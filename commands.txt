@@ -1,0 +1,4 @@
+system
+dir
+dis version
+Display environment
