@@ -1,1 +1,13 @@
-dis version
+system-view
+int GigabitEthernet 3/0/46
+ un shut
+quit
+int GigabitEthernet 3/0/47
+
+ un shut
+ quit
+ quit
+ save
+ y
+ 
+
