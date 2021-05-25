@@ -5,9 +5,9 @@ import time,os          #倒入系统参数和时间
 time = float (time.time())
 print('Start ICMP Test! Please wait a monment!')
 def ping_test():
-        ips = open('IP_List.txt', 'r')           # 只读方式打开文本文件ips
-        ip_True = open('IP_True.txt', 'w')               #创建文本文件IP_True.txt，w 表示只写，记录ping测成功的IP
-        ip_False = open('IP_False.txt', 'w')             ##创建文本文件IP_False.txt，w 表示只写，记录ping测失败的IP
+        ips = open('IP_List.txt', 'r')                   # 只读方式打开文本文件ips
+        ip_True = open('IP_True.txt', 'w')               # 创建文本文件IP_True.txt，w 表示只写，记录ping测成功的IP
+        ip_False = open('IP_False.txt', 'w')             # 创建文本文件IP_False.txt，w 表示只写，记录ping测失败的IP
         count_True,count_False=0,0
         for ip in ips.readlines():
                 ip = ip.replace('\n','')
