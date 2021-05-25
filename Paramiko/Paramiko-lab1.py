@@ -1,7 +1,6 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 import re
-import telnetlib
 import time                                 # 引入time模块，主要是为了使用sleep()方法,解决一些命令在直行过程中响应不及时的问题
 import paramiko                             # 引入ssh模块，该模块需要单独安装；
 LogTime = time.strftime('%Y-%m-%d_%H-%M-%S')

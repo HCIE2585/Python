@@ -1,0 +1,20 @@
+H3C
+screen-length disable
+display version
+dir
+display cpu-us
+display mem
+display environment
+display power
+display fan
+dis stp brief
+display ip int br
+display ip routing-table
+display ospf peer
+display logbuffer
+display current-configuration
+
+
+
+
+
