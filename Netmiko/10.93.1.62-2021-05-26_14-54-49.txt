@@ -1,0 +1,533 @@
+[
+  {
+    "network": "0.0.0.0",
+    "mask": "0",
+    "protocal": "Static",
+    "distance": "60",
+    "metric": "0",
+    "nexthop_ip": "124.89.118.241",
+    "nexthop_if": "RAGG1"
+  },
+  {
+    "network": "0.0.0.0",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "10.92.0.0",
+    "mask": "14",
+    "protocal": "Static",
+    "distance": "10",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.49",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "10.93.1.48",
+    "mask": "28",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.62",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "10.93.1.48",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.62",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "10.93.1.56",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "2",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "10.93.1.62",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "10.93.1.63",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.62",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "10.217.0.0",
+    "mask": "16",
+    "protocal": "Static",
+    "distance": "10",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.49",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "123.139.3.162",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.3.168",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "123.139.3.169",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "123.139.3.168",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "123.139.3.169",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "123.139.3.169",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "123.139.3.171",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "123.139.3.169",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "123.139.3.172",
+    "mask": "30",
+    "protocal": "Static",
+    "distance": "60",
+    "metric": "0",
+    "nexthop_ip": "123.139.3.170",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "123.139.156.64",
+    "mask": "27",
+    "protocal": "Static",
+    "distance": "255",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.67",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.70",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.72",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.74",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.75",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.76",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.77",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.78",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.81",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.85",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.87",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.91",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.92",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.93",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "123.139.156.94",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.128",
+    "mask": "26",
+    "protocal": "Static",
+    "distance": "255",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.129",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.130",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.131",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.132",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.136",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.140",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.144",
+    "mask": "28",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.160",
+    "mask": "28",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.176",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.180",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.184",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.188",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.189",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.8.190",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "124.89.118.240",
+    "mask": "30",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "124.89.118.242",
+    "nexthop_if": "RAGG1"
+  },
+  {
+    "network": "124.89.118.240",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "124.89.118.242",
+    "nexthop_if": "RAGG1"
+  },
+  {
+    "network": "124.89.118.242",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "124.89.118.243",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "124.89.118.242",
+    "nexthop_if": "RAGG1"
+  },
+  {
+    "network": "127.0.0.0",
+    "mask": "8",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "127.0.0.0",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "127.0.0.1",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "127.255.255.255",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  },
+  {
+    "network": "130.84.1.225",
+    "mask": "32",
+    "protocal": "Static",
+    "distance": "10",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.49",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "130.84.200.102",
+    "mask": "32",
+    "protocal": "Static",
+    "distance": "10",
+    "metric": "0",
+    "nexthop_ip": "10.93.1.49",
+    "nexthop_if": "Vlan100"
+  },
+  {
+    "network": "224.0.0.0",
+    "mask": "4",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "224.0.0.0",
+    "mask": "24",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "0.0.0.0",
+    "nexthop_if": "NULL0"
+  },
+  {
+    "network": "255.255.255.255",
+    "mask": "32",
+    "protocal": "Direct",
+    "distance": "0",
+    "metric": "0",
+    "nexthop_ip": "127.0.0.1",
+    "nexthop_if": "InLoop0"
+  }
+]
