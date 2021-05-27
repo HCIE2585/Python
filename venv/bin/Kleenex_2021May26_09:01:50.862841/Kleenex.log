@@ -1,0 +1,6 @@
+57: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[part=57.1/5][pid=4777][pname=Skeleton Generator Worker]: Kleenex has failed at an early stage (main).
+58: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[part=57.2/5][pid=4777][pname=Skeleton Generator Worker]: Traceback (most recent call last):
+59: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[part=57.3/5][pid=4777][pname=Skeleton Generator Worker]:   File "src/pyats/easypy/plugins/debug.py", line 43, in pyats.easypy.plugins.debug.check_pyats_version
+60: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[part=57.4/5][pid=4777][pname=Skeleton Generator Worker]: pyats.easypy.plugins.debug.InstallationError: /bin/sh: pyats: command not found
+61: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[part=57.5/5][pid=4777][pname=Skeleton Generator Worker]: 
+62: BannerdeMacBook-Pro.local: 2021-05-26T09:01:50: %KLEENEX-3-ERROR: %[pid=4777][pname=Skeleton Generator Worker]: Failed to send email.

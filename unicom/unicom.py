@@ -17,12 +17,6 @@ Please Select Device
 1:Core
 2:Access
 Put Device ID:''')
-if Device == '1':
-        username = ('banner')
-        password = ('Ops1@12345')
-if Device == '2':
-        username = ('unicom')
-        password = ('Unicom@321')
 protocol = input('''
 Please Select protocol
 1:Telnet
@@ -30,10 +24,12 @@ Please Select protocol
 Put protocol ID:''')
 count_True,count_False=0,0
 if Device == '1':
+        username = ('banner')
+        password = ('Ops1@12345')
         t1 = open('t1.txt', 'w')  # 创建并打开文本文件t1，w 表示只写，记录core_list连接成功的IP
         f1 = open('f1.txt', 'w')  # 创建并打开文本文件f1，w 表示只写，记录core_list连接失败的IP
         if protocol == '1':             # telnet
-                for line in open("H3C_device.txt"):
+                for line in open("H3C_list.txt"):
                         host = line.strip()     # 使用strip（）方法移除前后空格
                         print("Start telnet", host)
                         try:
@@ -45,7 +41,7 @@ if Device == '1':
                                 time.sleep(4)
                                 tn.write(password.encode() + b'\n')
                                 time.sleep(1)
-                                for command in open("commands.txt"):
+                                for command in open("hw_commands.txt"):
                                         cmd = command.replace('\n', '')   # 跟使用strip()类似，移除前后空格
                                         tn.write(cmd.encode() + b'\n')
                                         time.sleep(3)
@@ -72,7 +68,7 @@ if Device == '1':
                                 time.sleep(4)
                                 tn.write(password.encode() + b'\n')
                                 time.sleep(1)
-                                for command in open("commands.txt"):
+                                for command in open("hw_commands.txt"):
                                         cmd = command.replace('\n', '')   # 跟使用strip()类似，移除前后空格
                                         tn.write(cmd.encode() + b'\n')
                                         time.sleep(3)
@@ -90,7 +86,7 @@ if Device == '1':
                 print('Telnet Failed:',count_False)
                 print('Telnet Successfully:',count_True)
         if protocol == '2':
-                for line in open("H3C_FW.txt"):        #iplist
+                for line in open("h3c_list.txt"):        #iplist
                         host = line.strip()
                         ssh_port = 22
                         print("Start to connect", host)
@@ -103,14 +99,15 @@ if Device == '1':
                                 time.sleep(1)
                                 remote_conn = client.invoke_shell()
                                 time.sleep(2)
-                                for command in open("h3c-commands.txt"):
+                                for command in open("h3c_cmd.txt"):
                                         cmd = command.strip()
                                         print(cmd)
                                         remote_conn.send(cmd+ '\n')
                                         time.sleep(2)
-                                        print('ssss')
                                 time.sleep(1)
                                 info = remote_conn.recv(99999999)
+                                while remote_conn.ready():
+                                        info += remote_conn.recv(1024)
                                 print (info)
                                 log = open(host + '-' + LogTime + '.txt', 'w')
                                 log.write(info.decode())
@@ -124,7 +121,7 @@ if Device == '1':
                                 print (host, 'Connect Failed !!')
                                 f1.write(host + '\n')
                                 count_False += 1
-                for line in open("core_list.txt"):        #iplist
+                for line in open("hw_core_list.txt"):        #iplist
                         host = line.strip()
                         ssh_port = 22
                         print("Start to connect", host)
@@ -136,7 +133,7 @@ if Device == '1':
                                 print("Successfully connected to ",host)
                                 remote_conn = client.invoke_shell()
                                 time.sleep(4)
-                                for command in open("commands.txt"):
+                                for command in open("hw_cmd.txt"):
                                         cmd = command.replace('\n', '')
                                         remote_conn.send(cmd.encode()+ b'\n' )
                                         time.sleep(2)
@@ -155,10 +152,12 @@ if Device == '1':
                 print('SSH Failed:',count_False)
                 print('SSH Successfully:',count_True)
 if Device == '2':
+        username = ('unicom')
+        password = ('Unicom@321')
         t2 = open('t2.txt', 'w')  # 创建并打开文本文件t2，w 表示只写，记录access_list连接成功的IP
         f2 = open('f2.txt', 'w')  # 创建并打开文本文件f2，w 表示只写，记录access_list连接成功的IP
         if protocol == '1':
-                for line in open("access_list.txt"):
+                for line in open("hw_access_list.txt"):
                         host = line.strip()
                         print("Start telnet", host)
                         try:
@@ -170,7 +169,7 @@ if Device == '2':
                                 time.sleep(2)
                                 tn.write(password.encode() + b'\n')
                                 time.sleep(1)
-                                for command in open("commands.txt"):
+                                for command in open("hw_cmd.txt"):
                                         cmd = command.replace('\n', '')
                                         tn.write(cmd.encode() + b'\n')
                                         time.sleep(2)
@@ -188,7 +187,7 @@ if Device == '2':
                 print('Telnet Failed:',count_False)
                 print('Telnet Successfully:',count_True)
         if protocol == '2':
-                for line in open("access_list.txt"):        #iplist
+                for line in open("hw_access_list.txt"):        #iplist
                         host = line.strip()      #
                         ssh_port = 22
                         print("Start to connect", host)
@@ -200,7 +199,7 @@ if Device == '2':
                                 print("Successfully connected to ",host)
                                 remote_conn = client.invoke_shell()
                                 time.sleep(2)
-                                for command in open("commands.txt"):
+                                for command in open("hw_cmd.txt"):
                                         cmd = command.replace('\n', '')
                                         remote_conn.send(cmd.encode()+ b'\n' )
                                         time.sleep(2)
@@ -218,3 +217,7 @@ if Device == '2':
                                 count_False += 1
                 print('SSH Failed:',count_False)
                 print('SSH Successfully:',count_True)
+
+
+
+
