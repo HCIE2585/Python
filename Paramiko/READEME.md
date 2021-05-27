@@ -1,6 +1,9 @@
 1、这是一个可以正常使用的脚本，使用paramiko来实现ssh登陆网络设备批量执行脚本。
-2、注意以下几点：
+lab1：paramiko使用示例：
     commands.txt需要预先准备，是需要执行的命令
     core_list.txt文本是设备ip地址，提前准备好
     其他文件都是在运行中自动生成，不用管，其中tel1和tel2每次会自动覆盖
-3、如有问题联系微信：Ajian_Jack
+
+lab2:主要介绍sys.argv[]使用方法，参数传递。
+
+如有问题联系微信：Ajian_Jack
