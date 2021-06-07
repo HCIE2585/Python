@@ -1,0 +1,3 @@
+screen-length 0 temporary
+display version
+dir

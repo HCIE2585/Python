@@ -1,0 +1,3 @@
+screen-len disable
+display logbuffer
+display current-configuration
