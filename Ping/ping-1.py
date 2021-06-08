@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding:gb2312 -*-
 #import tab
-import time,os          #倒入系统参数和时间
+import time,os          #导入系统参数和时间
 time = float (time.time())
 print('Start ICMP Test! Please wait a monment!')
 def ping_test():
