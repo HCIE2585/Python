@@ -59,4 +59,3 @@ for line in open("lab3_hw_list.txt"):
                 count_False += 1
 print('Connected Successfully:',count_True,'Please check result1.txt')
 print('Connected Failed:',count_False,'Please check result2.txt')
-

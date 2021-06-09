@@ -33,16 +33,14 @@ for line in iplist.readlines():
                 out =b''
                 while remote_conn.recv_ready():
                         out += remote_conn.recv(1024)
-                # print(out)
                 time.sleep(2)
                 log = open(host + '-' + LogTime + '.txt', 'w')
-                print('look at me')
                 time.sleep(2)
                 log.write(out.decode())
                 time.sleep(5)
                 log.close()
                 print(host,"Exec Commands Successfully")
         except paramiko.ssh_exception.AuthenticationException:
-                print (host, '认证失败')
+                print (host, 'Authentication Failed')
         except socket.error:
-                print (host,"主机不可达")
+                print (host,"is unreachable")
