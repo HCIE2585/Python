@@ -1,8 +1,0 @@
-system
-interface lo100
-ip add 100.100.100.100 24
-description 666666666666
-quit
-un int lo100
-quit
-
