@@ -1,16 +1,16 @@
 #!/usr/bin/evn python
 while True:
-	input=raw_input("input your name:")
+	input=input("input your name:")
 	if input == "cisco":
-		password=raw_input("input your password:")
+		password=input("input your password:")
 		p='cisco'
 		while password != p:
-			password=raw_input("try again:")
+			password=input("try again:")
 		else:
-			print'welcome longin to System'
+			print('welcome longin to System')
 			while True:
 				match_yes = 0
-				input=raw_input("please input search name:")
+				input=input("please input search name:")
 				contact_file=file("list.txt")
 				while True:
 					line= contact_file.readline()

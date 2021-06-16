@@ -1,0 +1,6 @@
+01	SunJian	IT	1234
+02	ZhaoXin	IT	1243
+03	LiuLei	IT	2345
+04	FanZong	IT	4321
+05	ZhangSan HR	3333
+06	LiSi	CW	4444
