@@ -1,13 +1,10 @@
 代码情况说明：
     
     1、lab1 
-            lab1是paramiko的基本实验，可以很好的了解整个ssh交互过程，以及一些常用的参数
-            lab1_cmd.txt需要预先准备，是需要执行的命令
-            lab1_list.txt文本是设备ip地址，提前准备好
-            其他文件都是在运行中自动生成，不用管，其中tel1和tel2每次会自动覆盖 
-    
+        使用netmiko登陆一个H3C防火墙示例，并且将设备当前配置保存到本地
     2、lab2 
-        lab2主要是为了演示如何使用sys.argv[]来实现不同厂家的设备配置功能
-        lab2开头的txt文件，可以自行命名，因为在代码中没有任何调用。
-    
-    3、如有问题联系微信：Ajian_Jack
+        使用netmiko登陆一个H3C交换机示例，并且将设备当前配置保存到本地
+        主要介绍
+            send_command()
+            send_config_set()
+            send_config_from_file()
