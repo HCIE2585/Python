@@ -1,0 +1,20 @@
+[
+  {
+    "name": "device1",
+    "connection": {
+      "device_type": "hp_comware",
+        "host": "10.93.1.62",
+        "username": "banner",
+        "password": "Ops1@12345"
+    }
+  },
+   {
+    "name": "device2",
+    "connection": {
+      "device_type": "hp_comware",
+        "host": "10.93.2.62",
+        "username": "banner",
+        "password": "Ops1@12345"
+    }
+  }
+]
