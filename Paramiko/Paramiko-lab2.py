@@ -7,9 +7,9 @@ import sys                                  # 导入sys模块，是系统内建�
 LogTime = time.strftime('%Y-%m-%d_%H-%M-%S')
 username = ('banner')
 password = ('Ops1@12345')
-ip_file = sys.argv[1]                       # 定义一个变量ip_file对应sys.argv[1]
-cmd_file = sys.argv[2]                      # 定义一个变量cmd_file对应sys.argv[2]
-iplist = open(ip_file,'r')                  # 将ip_file的内容赋值给变量iplist
+ip_file = sys.argv[1]                                                   # 定义一个变量ip_file对应sys.argv[1]
+cmd_file = sys.argv[2]                                                  # 定义一个变量cmd_file对应sys.argv[2]
+iplist = open(ip_file,'r')                                              # 将ip_file的内容赋值给变量iplist
 for line in iplist.readlines():
         host = line.strip()
         ssh_port = 22
