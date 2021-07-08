@@ -1,3 +1,7 @@
+
+
+
+
 1、Telnetlib模块介绍
         
     1、使用python实现telnet网络设备，需要用到一个telnetlib的内建模块，不需要额外安装。
@@ -11,4 +15,4 @@
 
 2、效果展示
             
-    ![img.png](img.png)
+   ![telnet.png](telnet.png)
