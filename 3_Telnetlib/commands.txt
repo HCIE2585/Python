@@ -1,0 +1,3 @@
+terminal length 0
+show version
+show ip int br
