@@ -23,8 +23,6 @@ output = connect.send_command('show version',use_textfsm=True)
 print(type(output))
 log = open(device['host'] + '-' + LogTime + '.txt', 'w')
 log.write(json.dumps(output,indent=2))
-
-
 wb = Workbook()
 ws = wb.active
 ws.title = device['host']

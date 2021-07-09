@@ -49,7 +49,7 @@ for row in ws1.values:
 print('修改单元格内容')
 b2 =  ws1['B2']
 print('修改前的单元格内容为：' + b2.value)
-b2.value = 'Gi1/0/100ssssssssssssss'
+b2.value = 'Gi1/0/100'
 print('修改后的单元格内容为：' + b2.value)
 
 
