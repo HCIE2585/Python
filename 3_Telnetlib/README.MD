@@ -1,7 +1,3 @@
-
-
-
-
 1、Telnetlib模块介绍
         
     1、使用python实现telnet网络设备，需要用到一个telnetlib的内建模块，不需要额外安装。
@@ -14,5 +10,5 @@
     3、telnet是个不安全的协议，所以不建议使用，在生产环境中更偏向使用ssh协议
 
 2、效果展示
-            
-   ![telnet.png](telnet.png)
+
+![Telnet_1.png](Telnet_1.png)
