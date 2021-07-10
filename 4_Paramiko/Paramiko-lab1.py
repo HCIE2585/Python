@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import socket
 import time  # 引入time模块，主要是为了使用sleep()方法,解决一些命令在直行过程中响应不及时的问题
-import paramiko  # 引入ssh模块，该模块需要单独安装；
+import paramiko
 
 LogTime = time.strftime('%Y-%m-%d_%H-%M-%S')
 t1 = open('lab1_Successful.txt', 'w')  # 创建文本文件，w 表示只写,原有文件会被删除覆盖，记录ssh成功的IP
@@ -29,19 +29,19 @@ for line in open("lab1_list.txt"):  # 执行一个for循环，定义line 变量�
             time.sleep(2)  # 等两秒，这个根据情况定，有时候有的命令输出慢。
         time.sleep(1)
         info = remote_conn.recv(99999999)  # 使用recv()函数将回显结果保存到info变量中
-        log = open(host + '-' + LogTime + '.txt', 'w')  # 定义个log文本文件，
-        log.write(info.decode())  # 把info信息写到log中，
+        log = open(host + '-' + LogTime + '.txt', 'w')
+        log.write(info.decode())  #
         log.close()  # 关闭log文件
         print(host, "Exec Commands Successfully")  # 打印执行结果
-        t1.write(host + '\n')  # 把主机地址写到tel1.txt中
-        count_True += 1  # 统计执行成功的数量，每次加1
+        t1.write(host + '\n')
+        count_True += 1
     except paramiko.ssh_exception.AuthenticationException:
-        f1.write(host + '\n')  # 把主机地址写到tel2.txt中
-        count_False += 1  # 统计执行失败的数量，每次加1
+        f1.write(host + '\n')
+        count_False += 1
         print(host, 'Authentication Failed')
     except socket.error:
         print(host, "is unreachable")
-        f1.write(host + '\n')  # 把主机地址写到tel2.txt中
-        count_False += 1  # 统计执行失败的数量，每次加1
+        f1.write(host + '\n')
+        count_False += 1
 print('SSH Failed:', count_False)
 print('SSH Successfully:', count_True)

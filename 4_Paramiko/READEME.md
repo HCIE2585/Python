@@ -22,6 +22,7 @@
 4、脚本运行效果
 
     Paramiko-lab1
-
 ![Paramiko-lab1_run.jgp](Paramiko-lab1_run.jpg)
 
+     Paramiko-lab2
+![Paramiko-lab2_run.jgp](Paramiko-lab2_run.jpg)
