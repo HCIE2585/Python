@@ -1,0 +1,11 @@
+
+python3#ter len 0
+python3#show verion
+                ^
+% Invalid input detected at '^' marker.
+
+python3#show ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.123.32  YES manual up                    up      
+FastEthernet1/0            unassigned      YES NVRAM  administratively down down    
+python3#
